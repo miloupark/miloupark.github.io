@@ -1,8 +1,5 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
+gemspec
 
-gem 'jekyll', '3.8.5'
-
-group :jekyll_plugins do
-  gem 'jekyll-paginate'
-  gem 'jekyll-sitemap'
-end
+gem 'jekyll-admin', group: :jekyll_plugins
+gem 'jekyll-sitemap'
