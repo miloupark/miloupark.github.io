@@ -1,77 +1,381 @@
----
-layout: default
-overtitle: Made is a Jekyll theme
-title: For designers and web developers
-description: Show off your best work with this beautiful, minimal and customizable portfolio theme.
-featured_image: /images/social.jpg
----
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="페이지 제목" />
+  <meta property="og:description" content="페이지 설명" />
+  <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg"/>
+  <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="페이지 제목" />
+  <meta name="twitter:description" content="페이지 설명" />
+  <meta name="twitter:image" content="http://www.mysite.com/article/article1.html"/>
+  <meta name="twitter:domain" content="사이트 명" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./node_modules/fullpage.js/dist/fullpage.min.css" />
+  <link rel="stylesheet" href="./dist/css/comm.css">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+  <script defer src="./dist/js/comm.js"></script>
+  <title>Portfolio HyebinPark</title>
+</head>
 
-<div class="page-home">
+<body>
+  <main>
+  <!-- Fullpage container -->
+  <div id="fullpage" class="fullpage-container">
+    <!-- Section 1 -->
+    <div id="intro" class="section section-intro">
+      <div class="section-inner section-inner-intro">
+        <!-- Header -->
+        <header id="header" class="header">
+          <span class="header-nav_title">2023 PORTFOLIO</span>
+        </header>
+        <!-- Intro Title -->
+        <div class="intro-title">
+          <h1 class="blind">Personal Growth Archive</h1>
+          <div class="intro-title-top">
+            <span class="intro-title-per">Pers<img class="sunglass-img" src="./dist/images/sunglasses-emoji.svg" alt="sunglasses-emoji">nal</span>
+            <span class="intro-title-growth">Growth</span>
+            <span class="scale-star"></span>
+          </div>
+          <div class="intro-title-btm">
+            <span class="btm-a">A</span>
+            <span class="btm-r">r</span>
+            <span class="btm-c">c</span>
+            <span class="btm-h">h</span>
+            <span class="btm-i">i</span>
+            <span class="btm-v">v</span>
+            <span class="btm-e">e</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	{% if site.data.settings.hero_settings.background_image %}
-	<img src="{{ site.data.settings.hero_settings.background_image | relative_url }}" class="hero__background" draggable="false">
-	{% endif %}
+    <!-- Section 2 -->
+    <div id="profile" class="section section-profile">
+      <!-- Section 2 : left -->
+      <div class="profile-intro">
+        <div class="profile-intro-title">
+          <div class="profile-intro-smile"></div>
+          <h2 class="profile-intro-txt">Profile</h2>
+        </div>
+        <div class="profile-intro-contents">
+          <h3 class="profile-intro-cont_tit">About</h3>
+          <ul class="profile-intro-cont_lst">
+            <li>
+              Hyebin Park 박혜빈
+            </li>
+            <li>
+              1996.04.07
+            </li>
+            <li>
+              010-7154-9604
+            </li>
+            <li>
+              helenapark96@naver.com
+            </li>
+          </ul>
+        </div>
+        <div class="profile-intro-contents">
+          <h3 class="profile-intro-cont_tit">Education</h3>
+          <ul class="profile-intro-cont_lst">
+            <li>
+              2023 UI/UX디자인&프론트엔드 과정수료
+            </li>
+            <li>
+              2020 경희대학교 예술디자인대학 도예학과 졸업
+            </li>
+            <li>
+              2023 웹디자인 기능사
+            </li>
+          </ul>
+        </div>
+        <div class="profile-intro-contents">
+          <div class="profile-intro-contents-star"></div>
+          <h3 class="profile-intro-cont_tit">Skills</h3>
+          <div class="profile-intro-cont_lst-g" >
+            <ul class="profile-intro-cont_lst intro-cont_lst-skills">
+              <li class="skill-icons html">
+                <span class="blind">HTML</span>
+              </li>
+              <li class="skill-icons css">
+                <span class="blind">CSS</span>
+              </li>
+              <li class="skill-icons sass">
+                <span class="blind">SASS</span>
+              </li>
+              <li class="skill-icons js">
+                <span class="blind">JS</span>
+              </li>
+              <li class="skill-icons jquery">
+                <span class="blind">jquery</span>
+              </li>
+              <li class="skill-icons react">
+                <span class="blind">react</span>
+              </li>
+            </ul>
+            <ul class="profile-intro-cont_lst intro-cont_lst-skills">
+              <li class="skill-icons figma">
+                <span class="blind">figma</span>
+              </li>
+              <li class="skill-icons photoshop">
+                <span class="blind">photoshop</span>
+              </li>
+              <li class="skill-icons illustrator">
+                <span class="blind">illustrator</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="profile-intro-contents">
+          <h3 class="profile-intro-cont_tit">Contact</h3>
+          <ul class="profile-intro-cont_lst">
+            <li class="contact-github">
+              <a href="https://github.com/miloupark">
+                <span>GitHub : github.com/miloupark</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/miloupark">
+                <span>Kakao : jujeopking</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:helenapark@naver.com" target="_blank" rel="noopener noreferrer">
+                <span>Email : helenapark96@naver.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:helenapark@naver.com" target="_blank" rel="noopener noreferrer">
+                <span>hoonywhitesocks@gmail.com</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Section 2 : right -->
+     <div class="profile-welcome">
+      <p class="profile-welcome-txt">WELCOME TO MY<br>ARCHIVE.<br>PLEASE JOIN IN <br> MY FIRST <br>STEP AS A <br> WEB PUBLISHER</p>
+     </div>
+   </div>
+   
+    <!-- Section 3 -->
+    <div id="tokenpost" class="section section-tokenpost">
+      <!-- Section 3 : left descirption -->
+      <div class="sec-left tokenpost-desc">
+        <div class="sec-left-icon tokenpost-num"></div>
+        <h2 class="sec-left-tit tokenpost-desc-tit">Tokenpost</h2>
+        <p class="sec-left-sub tokenpost-desc-sub">웹 표준, 웹 접근성 준수 및 디자인 개편</p>
+        <p class="sec-left-txt tokenpost-desc-txt">블록체인 전문 미디어 사이트 ‘토큰 포스트'<br>리디자인 및 반응형 웹 퍼블리싱</p>
+        <div class="sec-left-cont tokenpost-desc-cont">
+          <ul>
+            <li>Responsive Web</li>
+            <li>메인 페이지 + 서브페이지 4개</li>
+            <li>HTML SCSS JS(Jquery) Figma</li>
+            <li>Gnuboard Swiper</li>
+            <li>100% 개인작업</li>
+          </ul>
+        </div>
+        <div class="sec-left-btns">
+          <button class="sec-left-btn tokenpost-desc-webbtn">
+            <a href="https://helenapark.cafe24.com/gnuboard5/" target="_blank">WebSite</a>
+          </button>
+          <button class="sec-left-btn tokenpost-desc-code">
+            <a href="https://github.com/miloupark/tokenpost">Code</a>
+          </button>
+          <button class="sec-left-btn tokenpost-desc-figma">
+            <a href="">Figma</a>
+          </button>
+        </div>
+        <p class="sec-left-experience tokenpost-desc-experience">리디자인 및 퍼블리싱 작업을 통해 기존의 복잡한 사이트맵과 텍스트가 많은 UI를 간결하고 직관적으로 변경했습니다.
+          웹 표준과 웹 접근성을 준수하여 반응형 웹을 제작하였고 그누보드를 통해 로그인, 회원가입 페이지를 구현했습니다.
+          swiper를 활용하여 다량의 정보와 이미지를 정리하고 다양한 아이콘을 사용하여 사용자가 컨텐츠에 대해 빠르게 파악하고 집중할 수 있도록 개선했습니다.
+        </p>
+        <div class="sec-left-arrows-g tokenpost-desc-scrollarrow-g">
+          <p class="sec-left-arrows-txt tokenpost-desc-scrollarrow-txt">다음 작업물은 여기에서, <br> 현재 작업물은 우측에서 스크롤해주세요!</p>
+          <img class="sec-left-arrows tokenpost-desc-scrollarrow" src="./dist/images/arrow.svg" alt="스크롤 방향">
+        </div>
+      </div>
+        <!-- Section 3 : right contents -->
+        <div class="sec-right tokenpost-cont">
+          <iframe class="tokenpost-cont-iframe" src="https://helenapark.cafe24.com/gnuboard5/" frameborder="0" width="100%" height="100%"></iframe>
+        </div> 
+    </div>
+    
+    <!-- Section 4 -->
+    <div id="mendini" class="section section-mendini">
+      <!-- Section 4 : left descirption -->
+    <div class="sec-left mendini-desc">
+      <div class="sec-left-icon mendini-num"></div>
+      <h2 class="sec-left-tit mendini-desc-tit">Mendini</h2>
+      <p class="sec-left-sub mendini-desc-sub">웹 원페이지 디자인 및 퍼블리싱</p>
+      <p class="sec-left-txt mendini-desc-txt">다양한 애니메이션 효과를 활용한 디자이너 <br> 알레산드로 멘디니 소개 페이지</p>
+      <div class="sec-left-cont mendini-desc-cont">
+        <ul>
+          <li>PC ver</li>
+          <li>메인 원페이지</li>
+          <li>HTML SCSS JS Figma</li>
+          <li>Matter.js Fullpage</li>
+          <li>100% 개인작업</li>
+        </ul>
+      </div>
+      <div class="sec-left-btns">
+        <button class="sec-left-btn mendini-desc-webbtn">
+          <a href="https://binyard.me/Mendini-Onepage/">WebSite</a>
+        </button>
+        <button class="sec-left-btn mendini-desc-code">
+          <a href="https://github.com/miloupark/Mendini-Onepage">Code</a>
+        </button>
+        <button class="sec-left-btn mendini-desc-figma">
+          <a href="">Figma</a>
+        </button>
+      </div>
+      <p class="sec-left-experience mendini-desc-experience">멘디니를 소개하는 웹 원페이지를 작업했습니다. 
+        fullpage.js를 활용하여 다양한 작업물들을 카테고리 별로 정리하여 각 섹션에 한 눈에 보이도록 구성했습니다. 
+        멘디니의 작업물을 형상화한 도형들을 2D 물리 엔진 라이브러리인 matter.js를 활용하여 중력에 의한 움직임을 구현함으로써 페이지에 생동감을 불어넣었습니다.
+      </p>
+      <div class="sec-left-arrows-g mendini-desc-scrollarrow-g">
+        <p class="sec-left-arrows-txt mendini-desc-scrollarrow-txt">다음 작업물은 여기에서, <br> 현재 작업물은 우측에서 스크롤해주세요!</p>
+        <img class="sec-left-arrows mendini-desc-scrollarrow" src="./dist/images/arrow.svg" alt="스크롤 방향">
+      </div>
+    </div>
+      <!-- Section 4 : right contents -->
+      <div class="sec-right mendini-cont">
+        <iframe src="https://binyard.me/Mendini-Onepage/" frameborder="0" width="100%" height="100%"></iframe>
+      </div>
+    </div>
 
-	<section class="hero">
-		<div class="wrap grid">
-			<div class="title">
-				<p class="subtitle">{{ page.overtitle }}</p>
-				<h1>{{ page.title }}</h1>
-			</div>
+    <!-- Section 5 -->
+    <div id="verve" class="section section-verve">
+      <!-- Section 5 : left descirption -->
+      <div class="sec-left verve-desc">
+        <div class="sec-left-icon verve-num"></div>
+        <h2 class="sec-left-tit verve-desc-tit">Verve</h2>
+        <p class="sec-left-sub verve-desc-sub">쇼핑몰 모바일 페이지 디자인 및 퍼블리싱</p>
+        <p class="sec-left-txt verve-desc-txt">팀 작업을 통한 LF몰 모바일 웹 리디자인</p>
+        <div class="sec-left-cont verve-desc-cont">
+          <ul>
+            <li>Mobile ver</li>
+            <li>메인, 상품리스트, 상품상세페이지</li>
+            <li>HTML SCSS JS(jquery) Figma</li>
+            <li>Swiper.js </li>
+            <li>팀 작업, 상세페이지 제작 및 퍼블리싱</li>
+          </ul>
+        </div>
+        <div class="sec-left-btns verve-desc-button-g">
+          <button class="sec-left-btn verve-desc-webbtn">
+            <a href="">WebSite</a>
+          </button>
+          <button class="sec-left-btn verve-desc-code">
+            <a href="">Code</a>
+          </button>
+          <button class="sec-left-btn verve-desc-figma">
+            <a href="">Figma</a>
+          </button>
+        </div>
+        <p class="sec-left-experience verve-desc-experience">기존의 Lf몰을 20-30대를 타켓으로한 쇼핑몰로 
+        열정과 활기를 뜻하는 Verve로 리디자인했습니다. 교육 과정 중 진행한 첫 작업이며 상세페이지, 결제페이지 그리고 장바구니 페이지를 담당하여 디자인과 
+         퍼블리싱을 진행했습니다. Swiper.js를 활용하여 다양한 상품들을 사용자들이 효과적으로 볼 수 있게 구현했습니다.
+         이 프로젝트를 통해 피그마, HTML, CSS의 기초를 학습하는 경험을 했습니다. 
+        </p>
+        <div class="sec-left-arrows-g verve-desc-scrollarrow-g">
+          <p class="sec-left-arrows-txt verve-desc-scrollarrow-txt">다음 작업물은 여기에서, <br> 현재 작업물은 우측에서 오버해주세요!</p>
+          <img class="sec-left-arrows verve-desc-scrollarrow" src="./dist/images/arrow.svg" alt="스크롤 방향">
+        </div>
+    </div>
+      <!-- Section 5 : right contents -->
+      <div class="sec-right verve-cont">
+      <div class="sec-right-img-g verve-cont-img-detail-g">
+        <div class="sec-right-img verve-cont-img-detail"></div>
+      </div>
+      <div class="sec-right-img-g verve-cont-img-purchase-g">
+        <div class="sec-right-img verve-cont-img-purchase"></div>
+      </div>
+      <div class="sec-right-img-g verve-cont-img-cart-g">
+        <div class="sec-right-img verve-cont-img-cart"></div>
+      </div>
+      </div>
+    </div>
 
-			<p class="intro subtitle--light">
-				{{ page.description }}
-				<a href="#" class="hero__cta button--fill contact-trigger js-contact">Get In Touch</a>
-			</p>
-		</div>
-	</section>
+      <!-- Section 6 -->
+      <div id="contact" class="section section-contact">
+      <!-- Section 6 : left -->
+      <div class="sec-contact-left">
+        <div class="section-contact-tit">
+          <span class="section-contact-tittxt">Contact</span>
+          <div class="shakingeyes"></div>
+        </div>
+        <ul class="sec-contact-cont">
+          <li><span>첫 발행 </span>2023년 11월 08일</li>
+          <li><span>지은이</span>박혜빈</li>
+          <li><span>펴낸 곳</span>맥북 M2 pro</li>
+          <li><span>디자인</span>피그마, 일러스트레이터</li>
+          <li><span>지원</span>VSCode, Swiper.js, Matter.js, GSAP, Gnuboard</li>
+          <li><span>도움</span>W3C, ChatGPT, Stackoverflow, Google, Youtube</li>
+          <li>
+            <a href="https://github.com/miloupark">
+              <span>저장소</span>Github</li>
+          <li>
+            <a href="https://open.kakao.com/o/sfUkLMQf">
+              <span>연락처</span>010-7154-9604</a>
+          </li>
+          <li>
+            <a href="mailto:helenapark@naver.com" target="_blank" rel="noopener noreferrer">
+              <span>주소</span>helenapark96@naver.com</a>
+          </li>
+        </ul>
+        <span class="sec-contact-about">본 포트폴리오는 박혜빈의 지난 6월부터 5개월간의 시간과 배움을 기반으로 구성되었습니다.<br>
+          웹 표준과 웹 접근성 등을 고려하여 마크업하는 웹 퍼블리셔로 성장하고자 합니다.
+          인터랙티브 웹에 관심이 많으며 GSAP, <br>React를 사용한 새로운 작업을 공부하며 진행하고 있습니다.
+          또한 프론트엔드로서의 성장에도 큰 열정을 가지고 있습니다.<br>적극적인 자세로 소통하며 성장하겠습니다. 감사합니다.
+        </span>
+      </div>
+      <!-- Section 6 : right -->
+      <div class="sec-contact-right">
+        <p class="contact-closing-txt">Thank You</p>
+        <div class="sec-contact-left-bottom">
+          <div class="copyright">HYEBIN PARK PORTFOLIO © 2023</div>
+          <!-- <div class="githubqr"></div> -->
+        </div>
+      </div>
+    </div>
+    </div>
 
-	<section class="listing">
-		<div class="wrap">
+   <!-- fullpage.js -->
+   <script>
+    new fullpage('#fullpage', {
+      //options here
+      navigation: true,
+      navigationTooltips: ['Intro', 'Profile', 'Tokenpost', 'Mendini', 'Verve', 'contact'],
+      showActiveTooltip: false,
+      autoScrolling:true,
+      scrollHorizontally: true,
+      // fullpage.js + AOS  
+      onLeave: function () {
+          jQuery(".section [data-aos]").removeClass("aos-animate");
+        },
+        onSlideLeave: function () {
+          jQuery(".slide [data-aos]").removeClass("aos-animate");
+        },
+        afterSlideLoad: function () {
+          jQuery(".slide.active [data-aos]").addClass("aos-animate");
+        },
+        afterLoad: function () {
+          jQuery(".section.active [data-aos]").addClass("aos-animate");
+          //jQuery('.fp-table.active .aos-init').addClass('aos-animate');
+        },
+    });
+  </script>
 
-			{% for project in site.projects reversed %}
-
-			{% if project.accent_color %}{% capture accent_color %}{{ project.accent_color }}{% endcapture %}{% endif %}
-
-			<article class="project__preview">
-				<h3 class="project__title"><a href="{{ project.url | relative_url }}" style="--accent: {{ accent_color }}">{{ project.title }}</a></h3>
-
-				<div class="project__images owl-carousel" style="--accent: {{ accent_color }}">
-					{% for image in project.gallery_images %}
-					<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="" class="project__image"></a>
-					{% endfor %}
-				</div>
-
-				<div class="project__content grid" style="border-color: {{ accent_color }}">
-					<p class="project__subtitle subtitle--light">{{ project.subtitle }}</p>
-					<p class="project__description --small">
-						{{ project.description }}
-						<a href="{{ project.url | relative_url }}" class="project__link button--text --right"
-							style="color: {{ accent_color }}; --color-var: {{ accent_color }}">View Case Study</a>
-					</p>
-				</div>
-			</article>
-
-			{% endfor %}
-		</div>
-	</section>
-
-	{% include section__about.html %}
-
-	<section class="recent-posts">
-		<div class="wrap grid">
-			<header class="recent-posts__header">
-				<h4>Recent blog posts</h4>
-				<a href="{{ '/blog' | relative_url }}" class="action button--text--accent --right">All Posts</a>
-			</header>
-
-			<div class="recent-posts__list grid">
-				{% for post in site.posts limit: 3 %}
-				{% include component__post-preview.html %}
-				{% endfor %}
-			</div>
-
-			<a href="{{ '/blog' | relative_url }}" class="action-bottom button--text--accent --right">All Posts</a>
-		</div>
-	</section>
-</div>
+</main>
+</body>
+</html>
