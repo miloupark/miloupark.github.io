@@ -1010,75 +1010,30 @@ legend {
   }
 }
 
-@media screen and (max-width: 1810px) {
+@media only screen and (max-width: 1600px) {
   .sec-left {
-    width: 20%;
+    padding: 16px;
+  }
+  .sec-left-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: -4px;
   }
   .sec-left-tit {
     font-size: 36px;
     padding: 10px 0;
   }
-  .sec-left-icon {
-    width: 56px;
-    height: 56px;
-  }
   .sec-left-sub {
     font-size: 18px;
-    letter-spacing: -0.4px;
   }
   .sec-left-txt {
     font-size: 16px;
   }
-  .sec-left-arrows-g, .verve-desc-scrollarrow-g {
-    padding-top: 18%;
-  }
-  .sec-left-arrows-g::after, .verve-desc-scrollarrow-g::after {
-    top: 28px;
-    left: 80px;
-  }
-  .sec-left-arrows-txt, .verve-desc-scrollarrow-txt {
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 1660px) {
-  .sec-left {
-    width: 18%;
-    padding: 10px;
-  }
-  .sec-left-icon {
-    margin: 0;
-  }
-  .sec-left-tit {
-    font-size: 32px;
-  }
-  .sec-left-txt {
-    font-size: 15px;
-  }
   .sec-left-cont {
-    padding: 20px 0;
+    padding: 30px 0 20px;
   }
   .sec-left-experience {
-    padding-top: 30px;
-  }
-  .sec-left-arrows-g {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-end;
-  }
-  .sec-left-arrows-g::after {
-    display: none;
-  }
-  .sec-left-arrows {
-    width: 40px;
-    height: 40px;
-  }
-}
-@media only screen and (max-width: 1610px) {
-  .sec-left {
-    width: 16%;
-  }
-  .sec-left-icon {
-    display: none;
+    padding-top: 36px;
   }
   .sec-left-arrows-g {
     padding-top: 16%;
@@ -1086,6 +1041,8 @@ legend {
   .sec-left-arrows-g::after {
     top: 38px;
     left: 118px;
+    width: 24px;
+    height: 24px;
   }
   .mendini-desc-scrollarrow-g {
     padding-top: 24%;
@@ -1095,27 +1052,100 @@ legend {
     left: 118px;
   }
 }
+@media only screen and (max-width: 1440px) {
+  .sec-left-icon {
+    display: none;
+  }
+  .sec-left-tit {
+    font-size: 32px;
+  }
+  .sec-left-sub {
+    padding-top: 30px;
+  }
+  .sec-left-arrows-g {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    padding-top: 12%;
+  }
+  .sec-left-arrows-g::after {
+    display: none;
+  }
+  .sec-left-arrows {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .sec-left-sub {
+    font-size: 17px;
+  }
+  .sec-left-txt {
+    font-size: 15px;
+  }
+  .sec-left-cont {
+    padding: 16px 0;
+  }
+  .sec-left-experience {
+    font-size: 14px;
+    padding-top: 24px;
+  }
+  .sec-left-arrows-g {
+    padding-top: 8%;
+  }
+  .sec-left-arrows-g .sec-left-arrows-txt, .sec-left-arrows-g .verve-desc-scrollarrow-txt {
+    font-size: 14px;
+  }
+  .sec-left-arrows {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .sec-left {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 868px) {
+  .sec-left {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 748px) {
+  .sec-left {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 624px) {
+  .sec-left {
+    width: 100%;
+  }
+  .sec-right {
+    display: none;
+  }
+  .sec-left-arrows-g {
+    display: none;
+  }
+  .section-verve .verve-cont {
+    display: none;
+  }
+  .section-contact .sec-contact-left {
+    width: 100%;
+    border-right: 0;
+  }
+  .section-contact .sec-contact-left::after, .section-contact .sec-contact-left::before {
+    display: none;
+  }
+  .section-contact .sec-contact-right {
+    display: none;
+  }
+}
 .sec-right {
   position: relative;
   width: 73%;
   height: 100vh;
 }
 
-@media screen and (max-width: 1810px) {
-  .sec-right {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 1660px) {
-  .sec-right {
-    width: 82%;
-  }
-}
-@media only screen and (max-width: 1610px) {
-  .sec-right {
-    width: 84%;
-  }
-}
 .tokenpost-desc {
   background-color: #655c53;
 }
@@ -1135,43 +1165,48 @@ legend {
 .verve-desc {
   border-right: 1px solid #333;
 }
-.verve-desc .sec-left-icon {
+
+.verve-num {
   background: url(../../dist/images/3num-star.svg) 50% 50% no-repeat;
   background-size: contain;
 }
-.verve-desc .sec-left-tit {
+
+.verve-desc-tit {
   color: #111;
   border-bottom: 1px solid #333;
 }
-.verve-desc .sec-left-sub {
+
+.verve-desc-sub {
   font-weight: 600;
   color: #111;
 }
-.verve-desc .verve-desc-txt {
+
+.verve-desc-txt {
   font-weight: 400;
   color: #111;
 }
-.verve-desc .verve-desc-cont {
-  font-weight: 400;
-  padding-top: 30px;
-}
-.verve-desc .verve-desc-cont li {
+
+.verve-desc-cont li {
   color: #111;
 }
-.verve-desc .verve-desc-webbtn, .verve-desc .verve-desc-code, .verve-desc .verve-desc-figma {
+
+.verve-desc-webbtn, .verve-desc-code, .verve-desc-figma {
   border: 1px solid #111;
 }
-.verve-desc .verve-desc-webbtn a, .verve-desc .verve-desc-code a, .verve-desc .verve-desc-figma a {
+.verve-desc-webbtn a, .verve-desc-code a, .verve-desc-figma a {
   color: #111;
 }
-.verve-desc .verve-desc-experience {
+
+.verve-desc-experience {
   font-weight: 400;
   color: #111;
 }
-.verve-desc .verve-desc-scrollarrow-g {
+
+.verve-desc-scrollarrow-g {
   color: #111;
 }
-.verve-desc .verve-desc-scrollarrow-g .verve-desc-scrollarrow-txt {
+
+.verve-desc-scrollarrow-txt {
   font-size: 15px;
   font-weight: 600;
   color: #444;
